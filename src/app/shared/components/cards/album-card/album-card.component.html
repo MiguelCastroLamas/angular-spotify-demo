@@ -1,0 +1,20 @@
+<div class="content" [id]="album.id">
+  <div class="up">
+    <img [src]="album.images | noimage">
+
+    <div class="info">
+      <div>
+        <span><b>{{album.name}}</b></span>
+      </div>
+      <div>
+        <span><i>TRACKS</i></span>
+        <span>{{album.total_tracks}}</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="date">
+    <span class="label-date"><i>RELEASE DATE</i></span>
+    <span ><b>{{album.release_date | date: 'dd/MM/yyyy'}}</b></span>
+  </div>
+</div>

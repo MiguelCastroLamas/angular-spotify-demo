@@ -1,0 +1,18 @@
+<div class="content" [id]="track.id">
+  <div class="up">
+    <img [src]="track.album?.images | noimage">
+
+    <div class="info">
+      <div>
+        <span><b>{{track.name}}</b></span>
+      </div>
+      <div>
+        <span>{{getTrackDuration(track.duration_ms)}}</span>
+        <span *ngIf="track.explicit"><i>Explicit!</i></span>
+      </div>
+    </div>
+  </div>
+
+  <iframe [src]="track.uri | sanitizeuri" width="100%" height="80" frameborder="0" allowtransparency="true"
+    allow="encrypted-media"></iframe>
+</div>

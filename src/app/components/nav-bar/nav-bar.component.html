@@ -1,0 +1,6 @@
+<div class="nav-div">
+  <input type="search" placeholder="{{'Find your favorite ' + category + '...'}}" [(ngModel)]="value"
+    (keyup.enter)="search($event)" spellcheck="false">
+
+  <button type="button" class="search" (click)="search($event)"></button>
+</div>

@@ -1,0 +1,6 @@
+<img class="logo" routerLink="artist" src="../../../assets/images/logo.png">
+
+<button [ngClass]="category == categories[key] ? 'active' : null" [class]=" categories[key]"
+  [routerLink]="categories[key]" type="button" *ngFor="let key of categoryKeys">
+  <span>{{categories[key] | titlecase}}</span>
+</button>

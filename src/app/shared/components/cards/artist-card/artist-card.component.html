@@ -1,0 +1,15 @@
+<div class="content" [id]="artist.id">
+  <div class="up">
+    <img [src]="artist.images | noimage">
+
+    <div class="info">
+      <div>
+        <span><b>{{artist.name}}</b></span>
+      </div>
+      <div>
+        <span><i>FOLLOWERS</i></span>
+        <span>{{artist.followers | number}}</span>
+      </div>
+    </div>
+  </div>
+</div>

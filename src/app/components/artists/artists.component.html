@@ -1,0 +1,7 @@
+<ng-container *ngIf="result && result.length > 0; else noResults">
+  <app-artist-card *ngFor="let artist of result" [artist]="artist"></app-artist-card>
+</ng-container>
+
+<ng-template #noResults>
+  <app-no-results></app-no-results>
+</ng-template>

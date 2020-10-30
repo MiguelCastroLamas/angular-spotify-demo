@@ -1,0 +1,7 @@
+<ng-container *ngIf="result && result.length > 0; else noResults">
+  <app-track-card *ngFor="let track of result" [track]="track"></app-track-card>
+</ng-container>
+
+<ng-template #noResults>
+  <app-no-results></app-no-results>
+</ng-template>

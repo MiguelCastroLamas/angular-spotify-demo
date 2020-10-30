@@ -1,0 +1,77 @@
+body {
+  font-family: Montserrat !important;
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+input,
+select,
+textarea,
+button {
+  font-family: inherit;
+}
+
+::-webkit-input-placeholder {
+  font-family: 'Montserrat';
+}
+
+::-ms-input-placeholder {
+  font-family: 'Montserrat';
+}
+
+::-moz-placeholder {
+  font-family: 'Montserrat';
+}
+
+::-moz-placeholder {
+  font-family: 'Montserrat';
+}
+
+app-root {
+  display: flex;
+  flex-direction: row;
+}
+
+app-side-bar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 10px 0px 10px 10px;
+  box-sizing: border-box;
+}
+
+app-artists,
+app-tracks,
+app-albums {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+app-artist-card,
+app-track-card,
+app-album-card {
+  width: 19%;
+  min-width: 225px;
+  display: flex;
+  margin-bottom: 30px;
+  flex-flow: row wrap;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #111111;
+  border-radius: 10px;
+  isolation: isolate;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+app-artist-card:hover,
+app-track-card:hover,
+app-album-card:hover {
+  background: #282828;
+  opacity: 0.8;
+}

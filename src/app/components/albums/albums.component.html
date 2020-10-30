@@ -1,0 +1,7 @@
+<ng-container *ngIf="result && result.length > 0; else noResults">
+  <app-album-card *ngFor="let album of result" [album]="album"></app-album-card>
+</ng-container>
+
+<ng-template #noResults>
+  <app-no-results></app-no-results>
+</ng-template>

@@ -1,0 +1,75 @@
+button {
+  border: 0;
+  text-align: start;
+  font-size: 20px;
+  padding: 15px 40px;
+  background: #000000;
+  color: #ffffff;
+  cursor: pointer;
+  border-right: 3px solid transparent;
+}
+
+button:hover {
+  font-weight: bold;
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+  border-right: 3px solid #ffffff !important;
+}
+
+.artist {
+  background-size: 30px;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-image: url(../../../assets/images/artist.svg);
+}
+
+.artist.active {
+  outline: none;
+  font-weight: bold;
+  border-right: 3px solid #ffffff !important;
+  background-image: url(../../../assets/images/artist-hover.svg);
+  background-color: #111111;
+}
+
+.album {
+  background-size: 30px;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-image: url(../../../assets/images/album.svg);
+}
+
+.album.active {
+  outline: none;
+  font-weight: bold;
+  border-right: 3px solid #ffffff !important;
+  background-image: url(../../../assets/images/album-hover.svg);
+  background-color: #111111;
+}
+
+.track {
+  background-size: 30px;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-image: url(../../../assets/images/track.svg);
+}
+
+.track.active {
+  outline: none;
+  font-weight: bold;
+  border-right: 3px solid #ffffff !important;
+  background-image: url(../../../assets/images/track-hover.svg);
+  background-color: #111111;
+}
+
+.logo {
+  width: 200px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.logo:focus {
+  outline: none;
+}

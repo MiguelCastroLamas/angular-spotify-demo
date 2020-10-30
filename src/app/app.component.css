@@ -1,0 +1,39 @@
+.left {
+  display: flex;
+  flex: 0 0 250px;
+  justify-content: flex-start;
+}
+
+.right {
+  display: flex;
+  flex-grow: 6;
+  flex-direction: column;
+  align-items: center;
+}
+
+.side-bar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #000000;
+}
+
+.nav-bar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #000000
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #111111;
+  color: #ffffff;
+  height: calc(100vh - 60px);
+  overflow-y: auto;
+}
